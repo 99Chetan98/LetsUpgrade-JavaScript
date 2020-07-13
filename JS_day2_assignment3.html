@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+      <title>Date in Format </title>
+  </head>
+  <body>
+      <script>
+        var todays_Date = new Date();
+        var dd = todays_Date.getDate();
+        var mm = todays_Date.getMonth()+1; 
+        var yyyy = todays_Date.getFullYear();
+        todays_Date = mm + '-'+ dd + '-' + yyyy + "," ;
+        document.write(todays_Date);
+        todays_Date = dd + '-' + mm + '-' + yyyy + "," ;
+        document.write(todays_Date);
+        todays_Date = mm + '/'  + dd + '/' + yyyy + "," ;
+        document.write(todays_Date);
+        todays_Date = dd + '/'  +mm + '/' + yyyy;
+        document.write(todays_Date);
+       </script>
+  </body>
+  </html>
