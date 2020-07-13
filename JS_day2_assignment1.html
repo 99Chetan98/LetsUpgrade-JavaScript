@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title> 
+      Current Date and Time
+    </title> 
+</head> 
+  
+<body> 
+    <script> 
+        var todays_Date = new Date(); 
+        var todays_Day = todays_Date.getDay(); 
+        var weekday = ['Sunday', 'Monday', 'Tuesday','Wednesday', 'Thursday', 'Friday', 'Saturday']; 
+        document.write("Today is : " + weekday[todays_Day]); 
+        document.write("<br/>"); 
+        var hours = todays_Date.getHours(); 
+        var period = (hours >= 12) ? 'PM' : 'PM'; 
+        hours = hours % 12; 
+        hours = hours ? hours : 12; 
+        var current_Time = hours + " " + period + " : " +   todays_Date.getMinutes() + " : " + todays_Date.getSeconds(); 
+        document.write("Current time is : " + current_Time); 
+    </script> 
+</body> 
+  
+</html> 
+
+
+
+
